@@ -1,10 +1,14 @@
 const app = require("./app.js");
 
-// config
+/**
+ * config
+ */
 const dotenv = require("dotenv");
 dotenv.config({ path: ".env" });
 
-// connect database
+/**
+ * connect to database
+ */
 const connectDatabase = require("./config/database.js");
 connectDatabase();
 
