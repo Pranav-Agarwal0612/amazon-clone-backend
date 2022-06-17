@@ -5,9 +5,12 @@ const app = express();
 app.use(express.json());
 
 /**
- * use product routes
+ * Use Routes:
+ *   product route
+ *   user route
  */
 app.use("/api/v1", require("./routes/productRoute.js"));
+app.use("/api/v1", require("./routes/userRoute.js"));
 
 /**
  * use error middleware

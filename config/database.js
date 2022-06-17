@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const ErrorHandler = require("../utils/errorhandler");
 
 const connectDatabase = () => {
 	mongoose
